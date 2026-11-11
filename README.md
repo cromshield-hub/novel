@@ -10,7 +10,7 @@
 
 1. 저장소를 Codex 작업 환경에 연결합니다.
 2. 먼저 이 저장소의 `AGENTS.md`와 `future_train/AGENTS.md`를 확인합니다.
-3. 본문은 `future_train/manuscript_rewrite.md`에서 수정합니다.
-4. 원고를 바꾼 뒤 `python future_train/build_story_doc.py`로 Word 파일을 갱신합니다.
+3. `future_train/characters_timeline.md`와 `future_train/worldbuilding.md`에서 최신 설계와 미정 사항을 확인합니다. 현재는 한 챕터씩 개정 집필 중이며, 1장 초안을 반영했고 2장 이후에는 이전 설정이 남아 있습니다.
+4. 본문 수정이 요청되면 `future_train/manuscript_rewrite.md`를 수정하고 `python3 future_train/build_story_doc.py`로 Word 파일을 갱신합니다.
 
-원고와 부록은 창작 중인 자료입니다. 인물, 사건, 연대기의 결정 사항을 바꿀 때는 집필자에게 먼저 확인합니다.
+원고와 부록은 창작 중인 자료입니다. 집필자가 확정한 최신 결정을 유지하며, 새로운 제안은 확정 사항과 구별해서 기록합니다.

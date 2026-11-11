@@ -5,8 +5,9 @@
 ## 작업 시작
 
 1. `future_train/AGENTS.md`를 읽고, 해당 작품의 설정과 작업 규칙을 따르세요.
-2. `future_train/manuscript_rewrite.md`가 본문 및 부록의 **원본(source of truth)**입니다.
-3. `future_train/characters_timeline.md`와 `future_train/worldbuilding.md`는 설정 검토용 문서입니다. 서로 불일치하면 본문을 임의로 고치지 말고 사용자에게 알려주세요.
+2. `future_train/manuscript_rewrite.md`는 현재 작성된 본문 및 부록의 원본입니다. 최신 설계의 본문 적용 여부는 작품 폴더의 지침에서 먼저 확인하세요.
+3. `future_train/characters_timeline.md`는 최신 인물·문체·연대기·사건 설계의 기준이고, `future_train/worldbuilding.md`는 세계관 기준입니다. 확정 사항과 제안·미정을 구별하세요. 본문과 다르더라도 이미 확정한 설계를 옛 본문 기준으로 되돌리지 않습니다.
+4. 현재 미래로 가는 기차는 사용자의 요청에 따라 **한 번에 한 챕터씩 집필**합니다. 1장 개정 초안을 본문·DOCX에 반영했으며, 2장 이후는 기존 원고입니다. 이어지는 요청의 범위에서 다음 챕터를 작성하고 나머지 장을 일괄 수정하지 않습니다.
 
 ## 편집 규칙
 
