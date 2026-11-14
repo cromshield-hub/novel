@@ -4,7 +4,9 @@
 
 - `page_style/book.css`: 사륙판(128 × 188mm) 책 모양, 본문 크기, 행간, 여백, 문단 간격, 반전 버튼
 - `page_style/reader.js`: 본문 페이지 분할, 화면 확대, 반전 버튼 동작
-- `page_style/story.css`: 집필 중 원고의 연속형 독서 화면
+- `page_style/morning.css`: 「Morning Coffee」의 차분하고 서늘한 종이 질감
+- `page_style/future.css`: 「미래로 가는 기차」의 푸른 기운이 도는 종이 질감
+- `page_style/story.css`: 과거 연속형 문서용 스타일(호환용)
 - `contents/*/publish/*.html`: 작품 내용과 최소한의 HTML 구조. CSS/JS는 상대경로로 참조
 - 루트 `index.html`: 게시판 형태의 작품 목록
 
