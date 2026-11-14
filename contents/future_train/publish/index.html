@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="미래로 가는 기차 1차, 2차, 현행본 중 읽을 원고를 선택하세요.">
+<title>미래로 가는 기차 · 원고 선택</title>
+<link rel="stylesheet" href="../../../views/page_style/versions.css">
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:#e8edf1;color:#243442;font-family:"Noto Serif KR","Nanum Myeongjo",serif}
+main{width:min(100% - 36px,650px);margin:70px auto 90px}
+.back{font:13px/1.6 system-ui,sans-serif;color:#526a7d;text-decoration:none}
+.back:hover{text-decoration:underline}
+.eyebrow{margin:36px 0 8px;font:12px/1.5 system-ui,sans-serif;letter-spacing:.18em;color:#667f91}
+h1{font-weight:500;font-size:clamp(29px,6vw,38px);letter-spacing:.06em;margin:0 0 14px}
+.intro{font-size:15px;line-height:1.9;color:#586b79;margin:0 0 35px}
+.choices{display:grid;gap:14px}
+.choice{display:block;padding:24px 26px;background:#f9fafb;border:1px solid #bac8d2;border-radius:8px;text-decoration:none;color:inherit;box-shadow:0 3px 10px #293b470b;transition:border-color .15s,transform .15s}
+.choice:hover,.choice:focus-visible{border-color:#385975;transform:translateY(-2px);outline-offset:3px}
+.choice h2{font-size:21px;font-weight:500;margin:0 0 8px}
+.choice p{font-size:14px;line-height:1.8;margin:0;color:#617280}
+.choice .action{display:block;margin-top:14px;color:#345b7a;font:600 13px/1.5 system-ui,sans-serif}
+.note{margin:28px 0 0;color:#778995;font:12px/1.8 system-ui,sans-serif}
+@media(max-width:600px){main{margin:40px auto 60px}.choice{padding:21px}}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../../../index.html">← 작품 목록</a>
+<div class="eyebrow">SELECT A VERSION</div>
+<h1>미래로 가는 기차</h1>
+<p class="intro">이 작품은 세 가지 원고로 읽을 수 있습니다.<br>어느 버전에서 시작하든 읽는 도중 다른 버전으로 이동할 수 있습니다.</p>
+<nav class="choices" aria-label="읽을 원고 선택">
+<a class="choice" href="./versions/1차.html"><h2>1차 퇴고</h2><p>최초의 흐름과 호흡을 간직한 원고</p><span class="action">1차 읽기 →</span></a>
+<a class="choice" href="./versions/2차.html"><h2>2차 퇴고</h2><p>장면과 설정을 확장한 원고</p><span class="action">2차 읽기 →</span></a>
+<a class="choice" href="./manuscript_rewrite.html"><h2>현행본</h2><p>현재 개정 중인 원고</p><span class="action">현행본 읽기 →</span></a>
+</nav>
+<p class="note">모든 버전은 같은 판형의 독서 화면으로 표시됩니다. 세 원고는 서로 다른 작업 단계의 기록입니다.</p>
+</main>
+</body>
+</html>
