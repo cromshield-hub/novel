@@ -11,12 +11,16 @@
 <body>
 <div class="controls"><span>미래로 가는 기차 · $version$</span><button onclick="window.print()">인쇄 / PDF</button></div>
 <nav class="version-nav" aria-label="원고 버전 선택">
-  <span>원고 버전</span>
-  <a class="version-link $if(first)$active$endif$" href="$firsthref$">1차 퇴고</a>
-  <a class="version-link $if(second)$active$endif$" href="$secondhref$">2차 퇴고</a>
-  <a class="version-link $if(current)$active$endif$" href="$currenthref$">현행본</a>
+  $if(choicehref)$<a class="version-link" href="$choicehref$">버전 목록</a>$else$<span>원고 버전</span>$endif$
+  <a class="version-link $if(first)$active$endif$" href="$firsthref$"$if(first)$ aria-current="page"$endif$>1차 퇴고</a>
+  <a class="version-link $if(second)$active$endif$" href="$secondhref$"$if(second)$ aria-current="page"$endif$>2차 퇴고</a>
+  <a class="version-link $if(current)$active$endif$" href="$currenthref$"$if(current)$ aria-current="page"$endif$>현행본</a>
+  $if(workinghref)$<a class="version-link $if(working)$active$endif$" href="$workinghref$"$if(working)$ aria-current="page"$endif$>Working</a>$endif$
 </nav>
 <main class="reader" id="reader" aria-label="미래로 가는 기차 본문"></main>
+$if(working)$
+<footer class="version-nav"><a class="version-link" href="https://github.com/cromshield-hub/novel/blob/main/contents/future_train/recipe/working_notes.md">Working 편집 메모·설정 자료 (스포일러)</a></footer>
+$endif$
 <div id="source">
 $body$
 </div>
