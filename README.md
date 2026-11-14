@@ -16,7 +16,7 @@ contents/
   future_train/
     publish/                    # 원고와 DOCX
     recipe/                     # 세계관, 집필 지침, 변환 스크립트
-views/                          # 공통 화면과 조판 규칙
+views/page_style/               # 공통 CSS와 독서 화면 JS
 ```
 
 `publish`는 독자가 읽을 작품의 결과물, `recipe`는 집필 과정에서 사용하는 자료입니다. 원고 내용과 창작 자료를 구분해 관리합니다.
