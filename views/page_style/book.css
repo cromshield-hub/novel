@@ -17,10 +17,17 @@ h2.lab { padding-top:.15em; }
 .reveal-button { border:1px solid #aa937e; border-radius:5px; background:#f4eee4; padding:10px 24px; font:600 10pt/1.5 "Noto Serif KR","Nanum Myeongjo",serif; color:#5d4938; letter-spacing:.08em; cursor:pointer; box-shadow:0 2px 5px #00000010; }
 .reveal-button:hover,.reveal-button:focus-visible { color:#30271f; background:#e8ddcd; border-color:#6f5743; outline-offset:3px; }
 [hidden] { display:none !important; }
+.illustration { margin:1.5em 0 1.7em; width:100%; break-inside:avoid; }
+.illustration img { display:block; width:100%; height:auto; border-radius:2px; }
+.ending-dialog { border:0; padding:0 0 19px; width:min(540px,calc(100vw - 36px)); max-width:540px; background:#fffdf8; color:#242321; box-shadow:0 15px 70px #0005; border-radius:5px; }
+.ending-dialog::backdrop { background:#211c18b8; }
+.ending-dialog img { display:block; width:100%; height:auto; }
+.ending-caption { text-align:center; font-size:18pt; letter-spacing:.12em; font-weight:600; margin:22px 16px 8px; }
+.ending-close { position:absolute; top:8px; right:8px; width:36px; height:36px; border-radius:50%; background:#fffc; border:1px solid #bcb1a0; font:23px/1 system-ui,sans-serif; color:#423930; cursor:pointer; }
 .folio { position:absolute; bottom:8.2mm; left:0; right:0; text-align:center; font-family:Georgia,serif; font-size:8pt; color:#89847b; }
 .controls { max-width:160mm; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; gap:12px; font:13px/1.5 system-ui,sans-serif; color:#64615c; }
 button { border:1px solid #bdb8ad; border-radius:6px; background:#fffdf8; padding:7px 13px; cursor:pointer; color:#333; }
 #source { display:none; }
 @page { size:128mm 188mm; margin:0; }
-@media print { body{background:white;padding:0;} .reader{gap:0;display:block;} .page {box-shadow:none; zoom:1!important; break-after:page; page-break-after:always;} .controls,.reveal-button{display:none!important;} .reveal strong[hidden]{display:inline!important;} }
+@media print { body{background:white;padding:0;} .reader{gap:0;display:block;} .page {box-shadow:none; zoom:1!important; break-after:page; page-break-after:always;} .controls,.reveal-button,.ending-dialog{display:none!important;} .reveal strong[hidden]{display:inline!important;} }
 @media screen and (max-width:530px){body{padding:12px 0;} .reader{gap:12px;} .page{transform-origin:top center;} .controls{padding:0 12px;}}
