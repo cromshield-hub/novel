@@ -14,8 +14,8 @@ h2.lab { padding-top:.15em; }
 .remember { margin-top:3.2em; }
 .pre-reveal { margin-bottom:2.8em; }
 .reveal { text-align:left; margin-top:.2em; font-size:12pt; letter-spacing:.04em; }
-.reveal-button { border:0; border-bottom:1px solid #9b8771; border-radius:0; background:transparent; padding:3px 0; font:10pt/1.5 "Noto Serif KR","Nanum Myeongjo",serif; color:#84705e; letter-spacing:.06em; cursor:pointer; }
-.reveal-button:hover,.reveal-button:focus-visible { color:#41362d; border-bottom-color:#41362d; }
+.reveal-button { border:1px solid #aa937e; border-radius:5px; background:#f4eee4; padding:10px 24px; font:600 10pt/1.5 "Noto Serif KR","Nanum Myeongjo",serif; color:#5d4938; letter-spacing:.08em; cursor:pointer; box-shadow:0 2px 5px #00000010; }
+.reveal-button:hover,.reveal-button:focus-visible { color:#30271f; background:#e8ddcd; border-color:#6f5743; outline-offset:3px; }
 [hidden] { display:none !important; }
 .folio { position:absolute; bottom:8.2mm; left:0; right:0; text-align:center; font-family:Georgia,serif; font-size:8pt; color:#89847b; }
 .controls { max-width:160mm; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; gap:12px; font:13px/1.5 system-ui,sans-serif; color:#64615c; }
