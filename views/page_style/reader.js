@@ -27,7 +27,12 @@
    const answer=button.nextElementSibling;
    button.hidden=true;
    answer.hidden=false;
+   const ending=document.getElementById('ending');
+   if(ending && typeof ending.showModal==='function') ending.showModal();
  });
- document.fonts.ready.then(()=>{render();scale()});
+ const ending=document.getElementById('ending');
+ ending?.querySelector('.ending-close')?.addEventListener('click',()=>ending.close());
+ const imageReady=Promise.all([...src.querySelectorAll('img')].map(img=>img.complete ? Promise.resolve() : new Promise(resolve=>{img.addEventListener('load',resolve,{once:true});img.addEventListener('error',resolve,{once:true});})));
+ Promise.all([document.fonts.ready,imageReady]).then(()=>{render();scale()});
  window.addEventListener('resize',scale);
 })();
