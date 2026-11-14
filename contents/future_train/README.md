@@ -17,6 +17,7 @@
 | --- | --- |
 | `publish/미래로_가는_기차_단편_초고.docx` | 현재 Word 원고. 1~2장 확정본 반영, 3장 이후 개정 대기 |
 | `publish/manuscript_rewrite.md` | 현재 본문 원본. 1~2장 확정본 반영, 3장 이후 개정 대기 |
+| `publish/manuscript_rewrite.html` | 독서용 HTML. 현재 MD 원고에서 생성 |
 | `recipe/pacing_reference.md` | 첨부 최초 초고의 분량 실측과 속도감·표현·킥 유지 기준 |
 | `recipe/seojin_voice_variants.md` | 서진의 경어체·평서체 설정 및 같은 내용의 비교 초안 |
 | `recipe/characters_timeline.md` | 최신 인물·문체·연대기·사건·킥 설계. 확정·제안·미정 구별 |
@@ -30,6 +31,7 @@
 ```bash
 python -m pip install -r contents/future_train/recipe/requirements.txt
 python contents/future_train/recipe/build_story_doc.py
+pandoc --standalone --to html5 --css ../../../views/story.css --metadata title='미래로 가는 기차' -o contents/future_train/publish/manuscript_rewrite.html contents/future_train/publish/manuscript_rewrite.md
 ```
 
 스크립트는 `publish/manuscript_rewrite.md`를 읽고 같은 `publish` 폴더에 `미래로_가는_기차_단편_초고.docx`를 덮어씁니다. 본문을 수정할 때 두 파일을 함께 커밋하세요.

@@ -1,0 +1,26 @@
+/* Continuous manuscript view for drafts generated from Markdown. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: #e9e7e2; }
+body {
+  width: min(128mm, calc(100% - 20px));
+  margin: 28px auto;
+  padding: 15mm 13mm 17mm;
+  background: #fffdf8;
+  color: #242321;
+  font: 10pt/1.66 "Noto Serif KR", "Nanum Myeongjo", "Noto Serif CJK KR", serif;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 19px #0000001d;
+}
+h1 { font-size: 15.5pt; font-weight: 600; text-align: center; margin: 7mm 0 10mm; }
+h2 { font-size: 12pt; margin-top: 2em; }
+h3 { font-size: 10.5pt; margin-top: 1.6em; }
+p { margin: 0 0 1.1em; }
+blockquote { margin: 1.2em 0 1.2em 5mm; padding-left: 3mm; border-left: 1px solid #ddd9d1; }
+hr { border: 0; border-top: 1px solid #ccc7bd; margin: 2em 0; }
+a { color: #875b44; }
+table { width: 100%; border-collapse: collapse; font-size: .9em; }
+th,td { border-bottom: 1px solid #ddd9d1; padding: .5em; text-align: left; }
+pre { overflow-x: auto; font-size: .88em; }
+@page { size: 128mm 188mm; margin: 15mm 13mm 17mm; }
+@media print { html,body { background: white; width: auto; margin: 0; padding: 0; box-shadow: none; } }

@@ -24,8 +24,8 @@ views/                          # 공통 화면과 조판 규칙
 ## 작품
 
 - [불치병](contents/불치병/publish/불치병.md) — [46판 독서용 HTML](contents/불치병/publish/불치병.html)
-- [morning coffee](contents/morning%20coffee/publish/manuscript.md) — 집필 중
-- [미래로 가는 기차](contents/future_train/README.md) — 시간의 흐름이 서로 다른 우주 테라리움들과, 어머니를 살리려는 정원사의 이야기.
+- [morning coffee](contents/morning%20coffee/publish/manuscript.md) — [초고 HTML](contents/morning%20coffee/publish/manuscript.html), 집필 중
+- [미래로 가는 기차](contents/future_train/README.md) — [초고 HTML](contents/future_train/publish/manuscript_rewrite.html), 시간의 흐름이 서로 다른 우주 테라리움들과 어머니를 살리려는 정원사의 이야기.
 
 ## Codex에서 이어 쓰기
 
