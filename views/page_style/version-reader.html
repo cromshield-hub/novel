@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>미래로 가는 기차 · $version$</title>
+<link rel="stylesheet" href="$root$/views/page_style/book.css">
+<link rel="stylesheet" href="$root$/views/page_style/future.css">
+<link rel="stylesheet" href="$root$/views/page_style/versions.css">
+</head>
+<body>
+<div class="controls"><span>미래로 가는 기차 · $version$</span><button onclick="window.print()">인쇄 / PDF</button></div>
+<nav class="version-nav" aria-label="원고 버전 선택">
+  <span>원고 버전</span>
+  <a class="version-link $if(first)$active$endif$" href="$firsthref$">1차 퇴고</a>
+  <a class="version-link $if(second)$active$endif$" href="$secondhref$">2차 퇴고</a>
+  <a class="version-link $if(current)$active$endif$" href="$currenthref$">현행본</a>
+</nav>
+<main class="reader" id="reader" aria-label="미래로 가는 기차 본문"></main>
+<div id="source">
+$body$
+</div>
+<script src="$root$/views/page_style/reader.js" defer></script>
+</body>
+</html>

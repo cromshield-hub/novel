@@ -1,0 +1,23 @@
+.version-nav {
+  max-width: 160mm;
+  margin: -8px auto 22px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font: 12px/1.5 system-ui, sans-serif;
+  color: #586676;
+}
+.version-nav > span { margin-right: 6px; }
+.version-link {
+  text-decoration: none;
+  color: #596b7c;
+  padding: 6px 11px;
+  border: 1px solid #aab9c7;
+  background: #f8fafc;
+  border-radius: 5px;
+}
+.version-link:hover, .version-link:focus-visible { border-color: #4a657d; color: #2c445a; }
+.version-link.active { background: #405568; color: #fff; border-color: #405568; }
+@media print { .version-nav { display: none !important; } }
