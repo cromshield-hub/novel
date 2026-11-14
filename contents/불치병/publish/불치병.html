@@ -4,35 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>불치병 · 46판 독서본</title>
-<style>
-:root { color-scheme: light; }
-* { box-sizing:border-box; }
-body { margin:0; padding:36px 14px; background:#e9e7e2; color:#242321; font-family:"Noto Serif KR","Nanum Myeongjo","Noto Serif CJK KR",Georgia,serif; }
-.reader { display:flex; flex-direction:column; align-items:center; gap:22px; }
-.page { position:relative; width:128mm; height:188mm; flex:none; background:#fffdf8; box-shadow:0 4px 19px #0000001d; padding:15mm 13mm 17mm; overflow:hidden; }
-.content { height:100%; overflow:hidden; font-size:10pt; line-height:1.66; font-weight:400; word-break:keep-all; overflow-wrap:break-word; letter-spacing:-.015em; }
-h1 { text-align:center; font-size:15.5pt; font-weight:600; letter-spacing:.18em; margin:7mm 0 11mm; }
-p { margin:0 0 1.15em; text-align:justify; }
-h2 { font-size:9.3pt; margin:1.15em 0 .7em; font-weight:600; }
-.rule { margin:2.1em 0 1.6em; border-top:1px solid #c7c4bd; }
-.log-start { height:.05em; }
-.lab { margin-left:5mm; padding-left:2.2mm; border-left:1px solid #dedbd4; font-size:9.15pt; line-height:1.65; }
-h2.lab { padding-top:.15em; }
-.remember { margin-top:3.2em; }
-.pre-reveal { margin-bottom:2.8em; }
-.reveal { text-align:left; margin-top:.2em; font-size:12pt; letter-spacing:.04em; }
-.reveal-button { border:0; border-bottom:1px solid #9b8771; border-radius:0; background:transparent; padding:3px 0; font:10pt/1.5 "Noto Serif KR","Nanum Myeongjo",serif; color:#84705e; letter-spacing:.06em; cursor:pointer; }
-.reveal-button:hover,.reveal-button:focus-visible { color:#41362d; border-bottom-color:#41362d; }
-[hidden] { display:none !important; }
-.folio { position:absolute; bottom:8.2mm; left:0; right:0; text-align:center; font-family:Georgia,serif; font-size:8pt; color:#89847b; }
-.controls { max-width:160mm; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; gap:12px; font:13px/1.5 system-ui,sans-serif; color:#64615c; }
-button { border:1px solid #bdb8ad; border-radius:6px; background:#fffdf8; padding:7px 13px; cursor:pointer; color:#333; }
-#source { display:none; }
-@page { size:128mm 188mm; margin:0; }
-@media print { body{background:white;padding:0;} .reader{gap:0;display:block;} .page {box-shadow:none; zoom:1!important; break-after:page; page-break-after:always;} .controls,.reveal-button{display:none!important;} .reveal strong[hidden]{display:inline!important;} }
-@media screen and (max-width:530px){body{padding:12px 0;} .reader{gap:12px;} .page{transform-origin:top center;} .controls{padding:0 12px;}}
-</style>
-<link rel="stylesheet" href="../../../views/book.css">
+<link rel="stylesheet" href="../../../views/page_style/book.css">
 </head>
 <body>
 <div class="controls"><span>불치병 · 사륙판 128 × 188 mm · 본문 10pt</span><button onclick="window.print()">인쇄 / PDF</button></div>
@@ -86,40 +58,7 @@ button { border:1px solid #bdb8ad; border-radius:6px; background:#fffdf8; paddin
 <p>저는 제 주장대로 전문 화학 가미 성분을 약 표면에 고르게 도포했습니다. 마지막으로 소량의 방향성 물질도 첨가했습니다.</p>
 <p>한 숟가락을 떠서 입에 넣었습니다.</p>
 <p class="pre-reveal">오늘의 약은,</p>
-<p class="reveal"><button class="reveal-button" type="button" aria-label="마지막 단어 펼치기">클릭하세요</button><strong hidden>김치볶음밥.</strong></p></div>
-<script>
-(function(){
- const src=document.getElementById('source'), reader=document.getElementById('reader');
- function createPage(n){
-   const page=document.createElement('section');page.className='page';
-   const area=document.createElement('div');area.className='content';
-   const folio=document.createElement('div');folio.className='folio';folio.textContent=n;
-   page.append(area,folio);reader.append(page);return area;
- }
- function render(){
-   reader.replaceChildren();
-   let area=createPage(1), n=1;
-   for(const node of [...src.children]){
-     const el=node.cloneNode(true); area.append(el);
-     if(area.scrollHeight>area.clientHeight+1 && area.children.length>1){
-       area.removeChild(el);area=createPage(++n);area.append(el);
-     }
-   }
- }
- function scale(){
-   const w=Math.min(1.25,(window.innerWidth-32)/(128*96/25.4));
-   for(const page of reader.children){page.style.zoom=w;}
- }
- reader.addEventListener('click',event=>{
-   const button=event.target.closest('.reveal-button');
-   if(!button)return;
-   const answer=button.nextElementSibling;
-   button.hidden=true;
-   answer.hidden=false;
- });
- document.fonts.ready.then(()=>{render();scale()});
- window.addEventListener('resize',scale);
-})();
-</script>
+<p class="reveal"><button class="reveal-button" type="button" aria-label="마지막 단어 펼치기">눌러주세요</button><strong hidden>김치볶음밥.</strong></p></div>
+<script src="../../../views/page_style/reader.js" defer></script>
 </body>
 </html>
