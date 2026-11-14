@@ -11,12 +11,12 @@
 
 ## 작업 시작
 
-1. `future_train/AGENTS.md`를 읽고, 해당 작품의 설정과 작업 규칙을 따르세요.
-2. `future_train/manuscript_rewrite.md`는 현재 작성된 본문 및 부록의 원본입니다. 최신 설계의 본문 적용 여부는 작품 폴더의 지침에서 먼저 확인하세요.
-3. `future_train/characters_timeline.md`는 최신 인물·문체·연대기·사건 설계의 기준이고, `future_train/worldbuilding.md`는 세계관 기준입니다. 확정 사항과 제안·미정을 구별하세요. 본문과 다르더라도 이미 확정한 설계를 옛 본문 기준으로 되돌리지 않습니다.
+1. `contents/future_train/AGENTS.md`를 읽고, 해당 작품의 설정과 작업 규칙을 따르세요.
+2. `contents/future_train/publish/manuscript_rewrite.md`는 현재 작성된 본문 및 부록의 원본입니다. 최신 설계의 본문 적용 여부는 작품 폴더의 지침에서 먼저 확인하세요.
+3. `contents/future_train/recipe/characters_timeline.md`는 최신 인물·문체·연대기·사건 설계의 기준이고, `contents/future_train/recipe/worldbuilding.md`는 세계관 기준입니다. 확정 사항과 제안·미정을 구별하세요. 본문과 다르더라도 이미 확정한 설계를 옛 본문 기준으로 되돌리지 않습니다.
 4. 현재 미래로 가는 기차는 사용자의 요청에 따라 **한 번에 한 챕터씩 집필**합니다. 1~2장 확정본을 본문·DOCX에 반영했으며, 3장 이후는 기존 원고입니다. 이어지는 요청의 범위에서 다음 챕터를 작성하고 나머지 장을 일괄 수정하지 않습니다.
 
-5. 문체와 속도감은 `future_train/pacing_reference.md`의 첨부 최초 초고 기준을 따릅니다. 개정 예상 분량을 채우려고 인물·사건·대사를 늘리지 않습니다.
+5. 문체와 속도감은 `contents/future_train/recipe/pacing_reference.md`의 첨부 최초 초고 기준을 따릅니다. 개정 예상 분량을 채우려고 인물·사건·대사를 늘리지 않습니다.
 
 ## 확정 원고 보호
 
@@ -27,7 +27,7 @@
 - 독자에게 노출되는 문장은 한국어로 작성합니다.
 - 사용자가 요청한 범위에서 수정하고 다른 장면이나 설정을 불필요하게 재해석하지 마세요.
 - 사실적 오류, 시간·나이 모순, 인물의 동기·행동 충돌을 점검하세요.
-- `future_train/build_story_doc.py`는 Markdown에서 DOCX를 만듭니다. 원고를 바꾸면 DOCX도 함께 갱신하세요.
+- `contents/future_train/recipe/build_story_doc.py`는 Markdown에서 DOCX를 만듭니다. 원고를 바꾸면 DOCX도 함께 갱신하세요.
 - 부록의 쿠키 장면은 본편과 독립적으로 취급하고, 요청 없이는 본편 결말에 섞지 마세요.
 
 이 지침보다 해당 작품 폴더의 `AGENTS.md`가 더 구체적이면 폴더 지침을 따릅니다.

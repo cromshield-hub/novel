@@ -8,9 +8,9 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "manuscript_rewrite.md"
-OUTPUT = ROOT / "미래로_가는_기차_단편_초고.docx"
+ROOT = Path(__file__).resolve().parent.parent
+SOURCE = ROOT / "publish" / "manuscript_rewrite.md"
+OUTPUT = ROOT / "publish" / "미래로_가는_기차_단편_초고.docx"
 
 FONT = "Noto Serif CJK KR"
 

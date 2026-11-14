@@ -9,30 +9,30 @@
 
 시간을 멈춘 어머니의 지구와, 시간을 앞질러 간 아들의 이야기. 우주를 가꾸는 기차를 배경으로 한 단편 **SF 드라마**입니다. 인물의 감정과 관계, 선택을 중심에 둡니다.
 
-**현재는 한 챕터씩 개정 집필 중입니다.** 1장 「정원사」와 2장 「아버지의 고리」 확정본을 본문과 DOCX에 반영했고, 3장 이후는 기존 원고입니다. 인물·문체·연대기·사건·킥은 `characters_timeline.md`, 세계관은 `worldbuilding.md`, 이어 쓰기 기준은 `AGENTS.md`를 따릅니다.
+**현재는 한 챕터씩 개정 집필 중입니다.** 1장 「정원사」와 2장 「아버지의 고리」 확정본을 본문과 DOCX에 반영했고, 3장 이후는 기존 원고입니다. 인물·문체·연대기·사건·킥은 `recipe/characters_timeline.md`, 세계관은 `recipe/worldbuilding.md`, 이어 쓰기 기준은 `AGENTS.md`를 따릅니다.
 
 ## 파일 안내
 
 | 파일 | 역할 |
 | --- | --- |
-| `미래로_가는_기차_단편_초고.docx` | 현재 Word 원고. 1~2장 확정본 반영, 3장 이후 개정 대기 |
-| `manuscript_rewrite.md` | 현재 본문 원본. 1~2장 확정본 반영, 3장 이후 개정 대기 |
-| `pacing_reference.md` | 첨부 최초 초고의 분량 실측과 속도감·표현·킥 유지 기준 |
-| `seojin_voice_variants.md` | 서진의 경어체·평서체 설정 및 같은 내용의 비교 초안 |
-| `characters_timeline.md` | 최신 인물·문체·연대기·사건·킥 설계. 확정·제안·미정 구별 |
-| `worldbuilding.md` | 기차, 테라리움, 시간, 위상 변환, 개입 규칙 |
+| `publish/미래로_가는_기차_단편_초고.docx` | 현재 Word 원고. 1~2장 확정본 반영, 3장 이후 개정 대기 |
+| `publish/manuscript_rewrite.md` | 현재 본문 원본. 1~2장 확정본 반영, 3장 이후 개정 대기 |
+| `recipe/pacing_reference.md` | 첨부 최초 초고의 분량 실측과 속도감·표현·킥 유지 기준 |
+| `recipe/seojin_voice_variants.md` | 서진의 경어체·평서체 설정 및 같은 내용의 비교 초안 |
+| `recipe/characters_timeline.md` | 최신 인물·문체·연대기·사건·킥 설계. 확정·제안·미정 구별 |
+| `recipe/worldbuilding.md` | 기차, 테라리움, 시간, 위상 변환, 개입 규칙 |
 | `AGENTS.md` | Codex가 이어 쓰기 전 확인할 집필 지침 |
-| `build_story_doc.py` | Markdown을 Word 문서로 조판하는 스크립트 |
-| `requirements.txt` | Word 문서 생성에 필요한 Python 패키지 |
+| `recipe/build_story_doc.py` | Markdown을 Word 문서로 조판하는 스크립트 |
+| `recipe/requirements.txt` | Word 문서 생성에 필요한 Python 패키지 |
 
 ## 편집과 Word 재생성
 
 ```bash
-python -m pip install -r future_train/requirements.txt
-python future_train/build_story_doc.py
+python -m pip install -r contents/future_train/recipe/requirements.txt
+python contents/future_train/recipe/build_story_doc.py
 ```
 
-스크립트는 자신의 폴더에서 `manuscript_rewrite.md`를 읽고 동일 폴더에 `미래로_가는_기차_단편_초고.docx`를 덮어씁니다. 본문을 수정할 때 두 파일을 함께 커밋하세요.
+스크립트는 `publish/manuscript_rewrite.md`를 읽고 같은 `publish` 폴더에 `미래로_가는_기차_단편_초고.docx`를 덮어씁니다. 본문을 수정할 때 두 파일을 함께 커밋하세요.
 
 ## 현재 이야기의 중심
 
